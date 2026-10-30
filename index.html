@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>文海 · Tang Wenhai — IT 运维 × AI 辅助开发</title>
+<meta name="description" content="文海（Tang Wenhai）：企业 IT 运维 + AI 辅助软件开发 + 业务流程自动化。">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');try{const t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<div class="grain" aria-hidden="true"></div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><span class="dot"></span>文海</a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a><a href="#projects">项目</a><a href="#experience">经历</a><a href="#skills">能力</a><a href="#notes">笔记</a><a href="#contact">联系</a>
+    </nav>
+    <button class="theme" id="theme" aria-label="切换明暗主题"><span aria-hidden="true">◐</span></button>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero wrap" id="top">
+  <p class="eyebrow reveal">IT Operations × AI-assisted Engineering</p>
+  <h1 class="reveal">把重复的人工操作，<br><em>变成好用的自动化系统。</em></h1>
+  <p class="lead reveal">我是文海（Tang Wenhai）。多年企业 IT 现场运维，近年持续实践 AI 辅助软件开发与业务流程自动化——正从传统 IT 技术支持，转向 <strong>AI 驱动的软件开发与企业自动化交付</strong>。</p>
+  <div class="cta reveal">
+    <a class="btn primary" href="#projects">看项目 →</a>
+    <a class="btn" href="https://github.com/tangwenhai839-create" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <dl class="facts reveal">
+    <div><dt>现场 IT 经历</dt><dd>韵达 · 圆通 · 酒店</dd></div>
+    <div><dt>个人主导项目</dt><dd>聚美康 · 轻语</dd></div>
+    <div><dt>常用 AI 工具</dt><dd>Codex · Claude Code · DeepSeek</dd></div>
+  </dl>
+</section>
+
+<section class="wrap section" id="about">
+  <h2 class="sec-title"><span>01</span>关于</h2>
+  <div class="about-grid">
+    <div class="prose">
+      <p>我在物流快递企业和酒店负责过 Windows 终端、硬件、局域网、打印机、监控与业务设备的维护和故障处理。这些年最熟悉的，是员工真实的操作场景：设备哪里会坏、数据怎么流转、哪些重复劳动最耗人。</p>
+      <p>现在，我围绕实际需求拆解业务规则与流程，用 Codex、Claude 等工具辅助完成 Python 后端、Web 应用、API 集成、数据库、测试与部署。我重视成熟工具、业务标准化和实际交付。</p>
+      <p class="muted">对复杂工业算法、企业级基础设施和生产系统的深度运维，我会以项目实际要求、与专业人员协作、分阶段验证为前提，不夸大。</p>
+    </div>
+    <aside class="card workflow">
+      <h3>我的 AI 辅助开发方式</h3>
+      <ol>
+        <li><b>需求</b>我负责梳理业务规则、拆解功能、定验收标准</li>
+        <li><b>编码</b>Codex / Claude Code 辅助编码、调试、写测试</li>
+        <li><b>互审</b>其他模型独立审查代码，驱动修复</li>
+        <li><b>验证</b>单测、接口测试、回归测试，记录变更</li>
+        <li><b>验收</b>真实数据实际操作，发现问题继续迭代</li>
+        <li><b>交付</b>达标后发布，保留回滚与维护安排</li>
+      </ol>
+    </aside>
+  </div>
+</section>
+
+<section class="wrap section" id="projects">
+  <h2 class="sec-title"><span>02</span>项目</h2>
+  <div class="projects">
+    <article class="card project">
+      <header><p class="tag-line">个人主导 · 开源维护 · 持续开发</p><h3>轻语 Qingyu</h3></header>
+      <p>面向 AI 对话归档、可信证据查询与身份治理的自托管系统。强调模块隔离、数据可追溯、接口契约与工程化测试。</p>
+      <ul class="points">
+        <li><b>Gateway</b>ChatGPT 归档导入、内容寻址保存（SHA-256）、数据归一化、只读证据查询与导出 API</li>
+        <li><b>Core</b>身份、epoch / lease 围栏、默认拒绝（fail-closed）、审计账本</li>
+        <li><b>工程</b>Gateway / Core 分库隔离；Python 客户端、JSON Schema 契约、Alembic 迁移、Docker、CI</li>
+        <li><b>测试</b>Gateway 模块 360+ 项单元测试通过</li>
+      </ul>
+      <p class="note">进展边界：项目仍在开发，Core 有待解决事项；Gateway 测试通过不等于整体已完成生产验收。</p>
+      <div class="chips"><span>Python 3.12</span><span>FastAPI</span><span>PostgreSQL</span><span>Alembic</span><span>Pydantic</span><span>Docker</span><span>CI</span></div>
+      <a class="link" href="https://github.com/tangwenhai839-create/qingyu" target="_blank" rel="noopener">github.com/…/qingyu ↗</a>
+    </article>
+    <article class="card project">
+      <header><p class="tag-line">个人主导 · AI 辅助开发 · 真实业务背景</p><h3>聚美康体重管理系统</h3></header>
+      <p>面向减重训练营，把身份识别、体重记录、学员管理和统计展示整合到同一系统，减少人工核对和重复登记。</p>
+      <ul class="points">
+        <li><b>识别</b>摄像头人脸识别学员（虹软 ArcFace，ctypes 调用），人员与体重数据自动关联</li>
+        <li><b>数据</b>体重录入、同日数据处理、历史管理、周 / 月排名、Excel 导出</li>
+        <li><b>界面</b>PC / 手机可用的称重页、管理页、自动刷新的排行榜大屏；Windows PyQt5 管理客户端与人脸录入</li>
+        <li><b>硬件</b>浏览器 Web Serial 连接电子秤串口、稳定读数判断与自动记录</li>
+      </ul>
+      <p class="note">各模块是否达到长期稳定运行标准，以实际部署、测试与验收记录为准。</p>
+      <div class="chips"><span>Python</span><span>Flask</span><span>SQLite</span><span>PyQt5</span><span>ArcFace</span><span>Web Serial</span></div>
+      <a class="link" href="https://github.com/tangwenhai839-create/jumeikang-3.0" target="_blank" rel="noopener">github.com/…/jumeikang-3.0 ↗</a>
+    </article>
+  </div>
+  <div class="explore card">
+    <h3>在研与探索 <small>方案阶段，尚非交付成果</small></h3>
+    <ul>
+      <li>多 Agent 协同开发：Codex 主开发 + 其他模型复审 + 人工确认</li>
+      <li>企业库存自然语言查询：智能体 → API → 库存系统</li>
+      <li>自动报价、CAD 加工单、石材套裁的方案分析</li>
+      <li>微信扫码 H5 / 防伪应用；ESP32 设备智能化调研</li>
+    </ul>
+  </div>
+</section>
+
+<section class="wrap section" id="experience">
+  <h2 class="sec-title"><span>03</span>经历</h2>
+  <ol class="timeline">
+    <li><time>2023.01 — 2025.05</time><div><h3>上海韵达速递有限公司 <span>IT</span></h3><p>办公区与操作场地网络故障处理、桌面运维；维护监控、办公终端以及现场工控机、工业相机（设备维护与调试，非视觉算法研发）。</p></div></li>
+    <li><time>2019.02 — 2022.05</time><div><h3>圆通速递 <span>IT 技术支持</span></h3><p>局域网与 PC 终端日常运行和故障处理；客户打印机安装与排障，对接总部技术部门；支持操作、派件、考勤等业务系统。</p></div></li>
+    <li><time>2018.04 — 2018.12</time><div><h3>深圳世纪皇廷酒店 <span>网络工程师</span></h3><p>维护酒店网络、监控、打印机及办公终端；参与系统对接与日常设备问题处理。</p></div></li>
+    <li class="edu"><time>2015 — 2018</time><div><h3>遵义航天工业学校 <span>中专 / 中技 · 计算机应用</span></h3><p>证书：计算机四级操作员。</p></div></li>
+  </ol>
+</section>
+
+<section class="wrap section" id="skills">
+  <h2 class="sec-title"><span>04</span>能力</h2>
+  <p class="legend"><span class="lv a">A</span>可独立完成 <span class="lv b">B</span>AI 辅助可完成 <span class="lv c">C</span>理解原理，经验有限 <span class="muted">· 自评定性判断，非认证</span></p>
+  <div class="skills">
+    <div class="card"><h3>桌面运维与硬件</h3><ul>
+      <li><span class="lv a">A</span>Windows 安装、驱动与故障处理</li><li><span class="lv a">A</span>PC 硬件维护与故障判断</li><li><span class="lv a">A</span>打印机、办公软件、会议音视频</li><li><span class="lv a">A</span>监控设备配置与调试</li><li><span class="lv a">A</span>Windows Server 安装</li><li><span class="lv c">C</span>AD 域控 / 组策略</li></ul></div>
+    <div class="card"><h3>网络</h3><ul>
+      <li><span class="lv a">A</span>局域网维护与基础排障</li><li><span class="lv a">A</span>IP / 网关 / DNS / DHCP 排查</li><li><span class="lv a">A</span>路由器、非网管交换机、无线</li><li><span class="lv c">C</span>VLAN、三层交换、企业防火墙</li></ul></div>
+    <div class="card"><h3>AI 辅助开发</h3><ul>
+      <li><span class="lv a">A</span>Codex / Claude / DeepSeek 协作开发</li><li><span class="lv b">B</span>需求拆解与流程设计</li><li><span class="lv b">B</span>Python · Flask / FastAPI</li><li><span class="lv b">B</span>Web 前端、API 设计与联调</li><li><span class="lv b">B</span>SQLite / PostgreSQL</li><li><span class="lv b">B</span>Git、AI 辅助测试与代码审查</li></ul></div>
+    <div class="card"><h3>部署与服务器</h3><ul>
+      <li><span class="lv b">B</span>Docker 容器化（个人项目）</li><li><span class="lv b">B</span>SSH、VPS 使用与维护</li><li><span class="lv b">B</span>Windows 服务与应用部署</li><li><span class="lv c">C</span>Linux 命令行深度排障</li></ul></div>
+  </div>
+  <p class="muted small">正在补强：独立手写复杂后端、Linux 深度运维、企业级生产上线与可观测性、Dify / n8n 完整交付。</p>
+</section>
+
+<section class="wrap section" id="notes">
+  <h2 class="sec-title"><span>05</span>笔记</h2>
+  <div class="card empty"><p>技术笔记整理中——会记录 AI 辅助开发的工作流、轻语的架构取舍、以及硬件与软件集成踩过的坑。</p><span class="soon">Coming soon</span></div>
+</section>
+
+<section class="wrap section contact" id="contact">
+  <h2 class="sec-title"><span>06</span>联系</h2>
+  <p class="big">有业务流程想自动化，或在找 AI 落地 / IT 支持方向的同伴？</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/tangwenhai839-create" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn" href="https://x.com/WenhaiTangigr" target="_blank" rel="noopener">X / Twitter ↗</a>
+  </div>
+</section>
+</main>
+<footer class="wrap foot"><span>© <span id="yr">2026</span> 文海 Tang Wenhai</span><span class="muted">Built with care · AI-assisted</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
